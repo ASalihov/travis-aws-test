@@ -1,4 +1,9 @@
 sudo: required
+
+language: csharp
+mono: none
+dotnet: 3.1.0
+
 services: 
   - docker
 before-install:
