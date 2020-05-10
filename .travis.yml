@@ -8,3 +8,9 @@ services:
   - docker
 before-install:
   - docker build -t asalihov/travis-aws-test -f Dockerfile.dev .
+  
+install:
+  - dotnet restore
+script:
+  - dotnet build
+  - dotnet test tests
