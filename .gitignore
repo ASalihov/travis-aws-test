@@ -1,0 +1,30 @@
+# Template ignore for Visual Studio
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+.vscode
+.vs
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+nuget.config
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+cockroach-data/
+publish_app/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+packages/
+.vs/
