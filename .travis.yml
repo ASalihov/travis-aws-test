@@ -14,3 +14,15 @@ install:
 script:
   - dotnet build
   - dotnet test tests
+  
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "DockerTravisAws"
+  env: "DockerTravisAws-env"
+  bucket_name: "elasticbeanstalk-us-east-2-916335024047"
+  bucket_path: "DockerTravisAws"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
