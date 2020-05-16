@@ -7,7 +7,7 @@ dotnet: 3.1
 services: 
   - docker
 before-install:
-  - docker build -t asalihov/travis-aws-test -f Dockerfile .
+  - docker build -t asalihov/travis-aws-test .
   
 install:
   - dotnet restore
