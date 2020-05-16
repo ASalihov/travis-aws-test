@@ -18,7 +18,7 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "DockerTravisAws"
+  app: "docker-travis-aws"
   env: "DockerTravisAws-env"
   bucket_name: "elasticbeanstalk-us-east-2-916335024047"
   bucket_path: "DockerTravisAws"
